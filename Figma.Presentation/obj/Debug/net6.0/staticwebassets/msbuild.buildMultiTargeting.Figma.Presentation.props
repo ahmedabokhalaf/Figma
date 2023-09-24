@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Figma.Presentation.props" />
+</Project>
