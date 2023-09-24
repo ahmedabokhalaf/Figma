@@ -21,6 +21,8 @@
             new PersonalInfoConfig().Configure(modelBuilder.Entity<PersonalInfo>());
             new WorkExperienceConfig().Configure(modelBuilder.Entity<WorkExperience>());
             new EducationConfig().Configure(modelBuilder.Entity<Education>());
+            new QuestionConfig().Configure(modelBuilder.Entity<Question>());
+
             modelBuilder.MapRelations();
             base.OnModelCreating(modelBuilder);
         }

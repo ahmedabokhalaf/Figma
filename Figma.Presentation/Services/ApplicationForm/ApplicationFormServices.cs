@@ -14,15 +14,14 @@
         public async Task Create([FromForm] ApplicationFormDto applicationFormDto)
         {
             if (allowedExtenstions.Contains(Path.GetExtension(applicationFormDto.Cover.FileName).ToLower())
-                && applicationFormDto.Cover.Length > maxAllowedCoverSize)
+                && applicationFormDto.Cover.Length <= maxAllowedCoverSize)
             {
                 using var dataStream = new MemoryStream();
                 await applicationFormDto.Cover.CopyToAsync(dataStream);
                 ApplicationForm app = new()
                 {
                     Cover = dataStream.ToArray(),
-                    ProfileId = applicationFormDto.ProfileId,
-                    PersonalInfoId = applicationFormDto.PersonalInfoId,
+                    ProfileId = applicationFormDto.ProfileId
                 };
                 unitOfWork.Applications.Create(app);
                 unitOfWork.Save();
@@ -47,7 +46,6 @@
                     await applicationFormDto.Cover.CopyToAsync(dataStream);
                     app.Cover = dataStream.ToArray();
                     app.ProfileId = applicationFormDto.ProfileId;
-                    app.PersonalInfoId = applicationFormDto.PersonalInfoId;
                 }
                 unitOfWork.Applications.Update(app);
                 unitOfWork.Save();

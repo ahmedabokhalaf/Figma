@@ -13,7 +13,7 @@
         public async Task Create(ProfileDto dto)
         {
             if (allowedExtenstions.Contains(Path.GetExtension(dto.Resume.FileName).ToLower())
-                && dto.Resume.Length > maxAllowedCoverSize)
+                && dto.Resume.Length <= maxAllowedCoverSize)
             {
                 using var dataStream = new MemoryStream();
                 await dto.Resume.CopyToAsync(dataStream);

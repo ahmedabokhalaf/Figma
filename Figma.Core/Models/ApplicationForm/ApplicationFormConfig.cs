@@ -1,7 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata.Builders;
-
-
+﻿
 namespace Figma.Core.Models
 {
     public class ApplicationFormConfig : IEntityTypeConfiguration<ApplicationForm>

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace Figma.Core.Models
 {
     public class FigmaProgram
@@ -23,5 +18,8 @@ namespace Figma.Core.Models
         public string Location { get; set; } = string.Empty;
         public string MinQualifications { get; set; } = string.Empty;
         public int MaxNumber { get; set; }
+        public int ApplicationId { get; set; }
+        public virtual ApplicationForm Application { get; set; } = default!;
+        public virtual Stage Stage { get; set; } = default!;
     }
 }

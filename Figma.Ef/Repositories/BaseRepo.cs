@@ -12,11 +12,13 @@
         public void Create(T item)
         {
             context.Set<T>().Add(item);
+            context.SaveChanges();
         }
 
         public void Delete(T item)
         {
             context.Set<T>().Remove(item);
+            context.SaveChanges();
         }
 
         public T Get(int id)
@@ -27,6 +29,7 @@
         public void Update(T item)
         {
             context.Set<T>().Update(item);
+            context.SaveChanges();
         }
     }
 }
