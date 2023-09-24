@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "KG3ZhT69e57WV3A10iFY43bAC7Bnt6xONpFZGLru0SxIsZlC1u4+n0eAiI7sWnlEhCom4GNtu/0pG3n59OM2xA==",
+  "success": true,
+  "projectFilePath": "D:\\FigmaRepo\\Figma\\Figma.Presentation\\Figma.Presentation.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\AhmedKH\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\AhmedKH\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\AhmedKH\\.nuget\\packages\\swashbuckle.aspnetcore\\6.5.0\\swashbuckle.aspnetcore.6.5.0.nupkg.sha512",
+    "C:\\Users\\AhmedKH\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.5.0\\swashbuckle.aspnetcore.swagger.6.5.0.nupkg.sha512",
+    "C:\\Users\\AhmedKH\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.5.0\\swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
+    "C:\\Users\\AhmedKH\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.5.0\\swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}
